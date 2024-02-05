@@ -26,7 +26,7 @@ export const Films = () => {
             <section className="row">
                 {films.map((film) => (
                     <div key={film._id} className="col-xs-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3 d-flex justify-content-center">
-                        <div className={`card mb-3 ${favorites.includes(film.properties.title) ? 'border-success border-3' : ''}`} style={{ maxWidth: '18rem' }}>
+                        <div className={`card h-auto mb-3 ${favorites.includes(film.properties.title) ? 'border-success border-3' : ''}`}>
                             <span className="card-header text-warning"><b>{film.properties.title}</b></span>
                             < div >
                                 <img onError={actions.handleErrorImg} src={`https://starwars-visualguide.com/assets/img/films/${film.uid}.jpg`} className="img-fluid" alt="" />
@@ -44,7 +44,7 @@ export const Films = () => {
                                         </h2>
                                         <div id={`collapse${film._id}`} className="accordion-collapse collapse" aria-labelledby={`heading${film._id}`} data-bs-parent={`#accordionDescription-${film._id}`}>
                                             <div className="accordion-body">
-                                                <p>{film.properties.opening_crawl}</p>
+                                                <span>{film.properties.opening_crawl}</span>
                                             </div>
                                         </div>
                                     </div>
