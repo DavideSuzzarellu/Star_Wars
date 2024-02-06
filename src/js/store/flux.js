@@ -159,11 +159,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			getFavorites: () => {
 				const favoritesFromLocalStorage = localStorage.getItem('favorites');
-			  
-				// Parsea el valor a JSON si es necesario
 				const parsedFavorites = JSON.parse(favoritesFromLocalStorage);
-			  
-				// Actualiza el estado con los favoritos
 				setStore({
 				  favorites: parsedFavorites
 				});
