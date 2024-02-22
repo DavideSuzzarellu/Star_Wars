@@ -161,9 +161,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const favoritesFromLocalStorage = localStorage.getItem('favorites');
 				const parsedFavorites = JSON.parse(favoritesFromLocalStorage);
 				setStore({
-				  favorites: parsedFavorites
+					favorites: parsedFavorites || [] 
 				});
-			  },
+			},
 
 			addFavorites: (newFavorites) => {
 				const store = getStore();		
