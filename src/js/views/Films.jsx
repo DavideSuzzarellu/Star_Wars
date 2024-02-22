@@ -11,7 +11,6 @@ export const Films = () => {
     const handleDetails = (id) => {
         navigate(`/films/${id}`)
         getDetailsFilms(id)
-
     }
 
     const handleFavorites = (item) => {

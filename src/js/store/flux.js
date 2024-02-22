@@ -174,14 +174,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				} else {
 				  getActions().removeFavorites(newFavorites, store.favorites);
 				}
-			  },
-	
+			  },	
 
-			  removeFavorites: (item, array) => {
-				const updatedFavorites = array.filter((element) => element !== item);
-				localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-				setStore({ favorites: updatedFavorites });
-			  },
+			removeFavorites: (item, array) => {
+			const updatedFavorites = array.filter((element) => element !== item);
+			localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+			setStore({ favorites: updatedFavorites });
+			},
 
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
