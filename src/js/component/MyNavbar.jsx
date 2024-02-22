@@ -82,8 +82,8 @@ export const MyNavbar = () => {
 					<Dropdown>
 						<Dropdown.Toggle className="d-blockjustify-content-center" variant="primary" id="dropdown-basic">
 							Favorites
-							<span className={`position-absolute top-0 start-100 translate-middle badge rounded-pill ${!favorites || favorites.length == 0 ? "bg-warning" : "bg-success"} text-dark`}>
-								{!favorites ? favorites.length = 0 : favorites.length}
+							<span className={`position-absolute top-0 start-100 translate-middle badge rounded-pill ${!favorites || favorites.length === 0 ? "bg-warning" : "bg-success"} text-dark`}>
+								{favorites == null ? favorites.length = 0 : favorites.length}
 							</span>
 						</Dropdown.Toggle>
 						<Dropdown.Menu className="down-centered dropdown-menu-end">
