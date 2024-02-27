@@ -11,7 +11,6 @@ export const SpeciesDetails = () => {
     const [world, setWorld] = useState(null)
     const [people, setPeople] = useState([])
 
-
     const fetchDataPeople = async (url) => {
         const response = await fetch(url);
         if (!response.ok) return response.status
@@ -59,7 +58,6 @@ export const SpeciesDetails = () => {
         fetchDataDetailsPeople()
     },
         [speciesDetails]);
-
 
     return (
         <main className="container mt-3">
