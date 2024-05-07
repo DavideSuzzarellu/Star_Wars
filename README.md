@@ -1,8 +1,10 @@
+# Star Wars
+<p>Este proyecto es una página web interactiva que ofrece información y contenido relacionado con el universo de Star Wars. Permite a los usuarios explorar personajes, planetas, naves espaciales y más.</p>
+
+
 ## Proyecto "Star Wars"
 <p>Este proyecto es una página web dedicada al universo de Star Wars, desarrollada utilizando tecnologías como React, Bootstrap, HTML, CSS, y consumo de una API REST. Utiliza Flux y Context de React para la gestión del estado de la aplicación.</p>
 
-## Descripción
-<p>Este proyecto es una página web interactiva que ofrece información y contenido relacionado con el universo de Star Wars. Permite a los usuarios explorar personajes, planetas, naves espaciales y más.</p>
 
 ## Características
 <ul>
